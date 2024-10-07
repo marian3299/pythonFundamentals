@@ -21,3 +21,11 @@ print(3e8) #3x10 a la 8 (notacion cientifica)
 print(0.0000000000000000000001)
 
 #Cadenas
+print("Hola mundo")
+print("Hola \"Mundo\"")
+print('Hola "Mundo"')
+print("I\'m Python")
+
+#Booleanos
+True
+False
