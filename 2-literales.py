@@ -25,6 +25,9 @@ print("Hola mundo")
 print("Hola \"Mundo\"")
 print('Hola "Mundo"')
 print("I\'m Python")
+print("""La siguiente
+cadena ocupa
+varias lineas""")
 
 #Booleanos
 True

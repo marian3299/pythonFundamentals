@@ -55,4 +55,9 @@ print(2 < 1) #False
 print(2 <= 2) #True
 print(1 < 2) #True
 
+#Operadores logicos
+print(1==1 and 1<2)
+print(1==12 or 1<2)
+print(not 1 >= 3)
+
 
