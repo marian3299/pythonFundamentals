@@ -41,18 +41,6 @@ print(l) #[1, 2, 3, 4, 5]
 len(l)
 
 
-#METODO append()
-l = [1, 2]
-l.append(3)
-print(l) #[1, 2, 3]
-
-
-#METODO insert()
-l = [1, 3]
-l.insert(1, 2)
-print(l) #[1, 2, 3]
-
-
 #ITERAR LISTAS
 lista = [5, 9, 10]
 for l in lista:
@@ -89,4 +77,47 @@ espanol = ["Uno", "Dos"]
 ingles = ["One", "Two"]
 frances = ["Un", "Deux"]
 c = zip(numeros, espanol, ingles, frances)
-print(list(c))
+print(list(c)) #[(1, 'Uno', 'One', 'Un'), (2, 'Dos', 'Two', 'Deux')]
+
+#iterar dos listas
+lista1 = [5, 9, 10]
+lista2 = ["Jazz", "Rock", "Djent"]
+for l1, l2 in zip(lista1, lista2):
+    print(l1, l2)
+#5 Jazz
+#9 Rock
+#10 Djents
+
+
+#SLICING -> my_list[inicio:fin]
+list_1 = [1]
+list_2 = list_1[:] #Hace una copia del contenido de list_1
+list_1[0] = 2
+print(list_2) #[1]
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list) #[8,6]
+
+#Indices negativos
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:-1]
+print(new_list) #[8, 6, 4]
+
+#Omitiendo start
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:3]
+print(new_list) #[10, 8, 6]
+
+#Omitiendo end
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[3:]
+print(new_list) #[4, 2]
+
+
+#IN y NOT IN
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list) #False
+print(5 not in my_list) #True
+print(12 in my_list) #True
