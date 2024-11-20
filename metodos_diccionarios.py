@@ -81,7 +81,41 @@ car = {
   "model": "Mustang",
   "year": 1964
 }
-
 poped_item = car.popitem()
 print(car)
 print(poped_item)
+
+
+#setdefault(keyname, value=None)
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("color", "white")
+y = car.setdefault("brand")
+
+print(x)
+print(y)
+print(car)
+
+
+#updtae(iterable)
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.update({"color": "White"}) 
+print(car)
+
+
+#values()
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = car.values()
+print(x)
